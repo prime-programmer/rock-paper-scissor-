@@ -31,10 +31,10 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     // your code here!
     if (humanChoice == "paper"){
-        if (computerChoice == "paper"){
+        if (computerChoice === "paper"){
             console.log("Draw");
         }
-        else if  (computerChoice == "rock"){
+        else if  (computerChoice === "rock"){
             console.log("You win! Paper beats Rock.")
             humanScore ++;
         }
@@ -43,12 +43,12 @@ function playRound(humanChoice, computerChoice) {
             computerScore ++;
         }
     }
-    else if (humanChoice == "rock") {
-        if (computerChoice == "paper"){
+    else if (humanChoice === "rock") {
+        if (computerChoice === "paper"){
             console.log("You lose! Paper beats Rock");
             computerScore ++;
         }
-        else if  (computerChoice == "rock"){
+        else if  (computerChoice === "rock"){
             console.log("Draw!");
         }
         else{
@@ -56,12 +56,12 @@ function playRound(humanChoice, computerChoice) {
             humanScore ++;
         }
     }
-    else if(humanChoice == "scissors"){
-        if (computerChoice == "paper"){
+    else if(humanChoice === "scissors"){
+        if (computerChoice === "paper"){
             console.log("You win! Scissors beat Paper");
             humanScore ++;
         }
-        else if  (computerChoice == "rock"){
+        else if  (computerChoice === "rock"){
             console.log("You lose! Rock beats Scissors");
             computerScore ++;
         }
